@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;600;700;800&display=swap');
+
+:root {
+    /* Primary colors */
+    --Dark-Violet: hsl(256, 26%, 20%);
+    --Grayish-Blue: hsl(216, 30%, 68%);
+    /* Neutral colors */
+    --Very-Dark-Violet: hsl(270, 9%, 17%);
+    --Dark-Grayish-Violet: hsl(273, 4%, 51%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'DM Serif Display', serif;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+hr {
+    width: 5rem;
+}
+
+.hamburger-mobile {
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+#close {
+    display: none;
+}
+
+.head-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+nav {
+    display: flex;
+}
+
+.logo,
+#navbar,
+.hamburger {
+    height: 2.5vh;
+}
+
+#navbar {
+    display: flex;
+}
+
+
+#navbar li {
+    list-style-type: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    margin-left: 2rem;
+    font-family: 'DM Serif Display', serif;
+    color: lightgray;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#navbar li a:hover {
+    color: var(--Very-Dark-Violet);
+}
+
+.plan {
+    margin-top: -.4rem;
+    display: inline-flex;
+    margin-left: 2rem;
+    padding: 10px 12px;
+    border: 2px solid var(--Very-Dark-Violet);
+}
+
+.plan:hover {
+    cursor: pointer;
+    background-color: var(--Dark-Violet);
+}
+
+.plan a {
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--Very-Dark-Violet);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.plan a:hover {
+    color: var(--Very-Light-Gray);
+}
+
+.sub-main {
+    margin-top: 1rem;
+    display: inline-flex;
+    background-color: var(--Dark-Violet);
+    height: 65vh;
+    background-image: url(/images/bg-pattern-intro-right-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 20%;
+    background-position-y: -3rem;
+}
+
+.intro {
+    width: 50%;
+    margin: 4rem;
+    margin-left: 5rem;
+}
+
+.intro h1 {
+    color: var(--Very-Light-Gray);
+    font-family: 'DM Serif Display', serif;
+    font-size: 68px;
+    letter-spacing: 1px;
+    flex-wrap: wrap;
+    word-spacing: 10px;
+    line-height: 3.5rem;
+}
+
+.intro p {
+    color: var(--Dark-Grayish-Violet);
+    font-size: 14px;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    margin-top: 2rem;
+    display: inline-flex;
+    padding: 10px 12px;
+    border: 2px solid var(--Very-Light-Gray);
+    background-color: var(--Dark-Violet);
+    /* margin-left: 2rem; */
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--Very-Light-Gray);
+}
+
+.btn a {
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--Very-Light-Gray);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.btn a:hover {
+    color: var(--Very-Dark-Violet);
+}
+
+.pic1 {
+    width: 50%;
+    position: right;
+}
+
+.pic1 img {
+    margin-top: 4rem;
+    margin-left: 8rem;
+    height: 65vh;
+    width: 65%;
+}
+
+.left-image img {
+    margin: 0;
+    margin-top: -5rem;
+    height: 40vh;
+}
+
+hr {
+    border-top: 2px solid hsl(273, 4%, 51%);
+    margin-bottom: 2rem;
+}
+
+.bg-main {
+    margin-top: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+}
+
+.desc hr {
+    margin-bottom: 2rem;
+    width: 10%;
+    border-top: 1px solid lightgray;
+}
+
+.desc h2 {
+    font-size: 3rem;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 3rem;
+
+}
+
+.job-desc {
+    display: flex;
+    justify-content: space-around;
+}
+
+.job-desc img {
+    width: 10%;
+    margin-bottom: 1rem;
+}
+
+.job-desc h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.job-desc p {
+    font-size: 13px;
+    word-break: keep-all;
+    color: rgb(163, 162, 162);
+    letter-spacing: 1px;
+    line-height: 1.3rem;
+}
+
+.afford {
+    margin-left: 2rem;
+}
+
+.people {
+    margin-left: 1.5rem;
+}
+
+.more {
+    margin: 5rem;
+    background-color: var(--Dark-Violet);
+    padding: 4.6rem;
+    background-image: url(/images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.more-desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.more-desc h4 {
+    color: var(--Very-Light-Gray);
+    font-size: 2.5rem;
+    font-family: 'DM Serif Display', serif;
+    line-height: 3rem;
+}
+
+.work {
+    margin-right: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: inline-flex;
+    padding: 10px 12px;
+    border: 2px solid var(--Very-Light-Gray);
+    background-color: var(--Dark-Violet);
+}
+
+.work:hover {
+    cursor: pointer;
+    background-color: var(--Very-Light-Gray);
+}
+
+.work a {
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--Very-Light-Gray);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.work a:hover {
+    color: var(--Dark-Violet);
+}
+
+footer {
+    background-color: var(--Very-Light-Gray);
+    background-image: url(/images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 2rem;
+}
+
+.foot-logo {
+    width: 12%;
+    height: 5vh;
+    margin-top: 3rem;
+}
+
+.social-media {
+    margin-top: 3rem;
+}
+
+.social-media li {
+    list-style-type: none;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media img {
+    margin-left: 1rem;
+}
+
+.social-media img:hover {
+    background: var(--Very-Dark-Violet);
+}
+
+.foot {
+    width: 88%;
+    margin-left: 5rem;
+    margin-right: 7rem;
+    border-top: 1px solid lightgray;
+}
+
+.duties {
+    margin-top: 5rem;
+    margin-right: 22rem;
+    margin-left: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.duties h5 {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: rgb(148, 147, 147);
+}
+
+.duties li {
+    list-style-type: none;
+}
+
+.duties li a {
+    text-decoration: none;
+    line-height: 2rem;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--Very-Dark-Violet);
+
+}
+
+.duties li a:hover {
+    text-decoration: underline;
+}
+
+.sm-plan {
+    display: none;
+}
+
+@media (max-width: 799px) {
+    #navbar {
+        display: none;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: var(--Very-Dark-Violet);
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    } 
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+    #navbar li a {
+        color: var(--Very-Light-Gray);
+    }
+    #navbar li a:hover {
+        color: var(--Very-Light-Gray);
+    }
+    .sm-plan{
+        list-style-type: none;
+        display: list-item;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--Very-Light-Gray);
+        margin-left: 2rem;
+        border: 2px solid var(--Very-Light-Gray);
+        padding: 8px 3rem;
+    }
+    #close {
+        display: none;
+    }
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    .hamburger-mobile {
+        margin-top: -.4rem;
+        display: list-item;
+        list-style-type: none;
+        cursor: pointer;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .plan {
+        display: none;
+    }
+
+    .sub-main {
+        height: 60vh;
+        background-size: 35%;
+        background-position-y: -2.5rem;
+    }
+
+    .pic1 {
+        width: 50%;
+        position: right;
+    }
+
+    .pic1 img {
+        margin-top: 3rem;
+        margin-left: -1.7rem;
+        height: 60vh;
+        width: 100%;
+    }
+
+    hr {
+        margin-bottom: 1rem;
+    }
+
+    .intro {
+        width: 50%;
+        margin: 4rem;
+        margin-left: 3rem;
+    }
+
+    .intro h1 {
+        font-size: 38px;
+        word-spacing: normal;
+        line-height: 2rem;
+    }
+
+    .intro p {
+        margin-top: 1rem;
+    }
+
+    .bg-main {
+        margin-top: 1rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .desc hr {
+        width: 16%;
+        border-top: 1px solid lightgray;
+        margin-bottom: 2rem;
+    }
+
+    .desc h2 {
+        margin-bottom: 3rem;
+        font-size: 38px;
+        font-family: 'DM Serif Display', serif;
+    }
+
+    .job-desc img {
+        width: 15%;
+    }
+
+    .job-desc br {
+        display: none;
+    }
+
+    .afford {
+        margin-left: 1rem;
+    }
+
+    .people {
+        margin-left: 1rem;
+    }
+
+    .more {
+        margin: 3rem;
+        padding: 2.8rem;
+        background-size: 58%;
+    }
+
+    .more-desc h4 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .work {
+        margin-right: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        display: inline-flex;
+        padding: 8px 12px;
+    }
+
+    .socials {
+        margin: 3rem;
+    }
+
+    .duties {
+        margin: 3rem;
+    }
+
+    .foot-logo {
+        width: 14%;
+        height: 4vh;
+        margin-top: 3rem;
+    }
+
+    .foot {
+        width: 85%;
+        margin-left: 3rem;
+        margin-right: 5rem;
+    }
+}
