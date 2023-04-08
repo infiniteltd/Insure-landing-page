@@ -96,6 +96,7 @@ nav {
 
 #navbar li a:hover {
     color: var(--Very-Dark-Violet);
+    transition: 0.3s;
 }
 
 .plan {
